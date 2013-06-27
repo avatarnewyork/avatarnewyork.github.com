@@ -28,6 +28,24 @@ author :
 #
 production_url : http://username.github.io
 
+authors:
+  patrick:
+    name: Patrick Tully
+    display_name: Patrick
+    gravatar: e630af8393ee16908179ae7b088b4553
+    email: patrick@avatarnewyork.com
+    web: http://avatarnewyork.com
+    twitter: mrpatrick
+    github: mrpatrick
+  ben:
+    name: Ben Zajac
+    display_name: Ben 
+    gravatar: 12e480a364a5c19214f99b4dfe9a11d5
+    email: ben@avatarnewyork.com
+    web: http://avatarnewyork.com
+    twitter: avatarnewyork
+    github: zajax
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

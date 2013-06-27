@@ -22,7 +22,13 @@ In `_config.yml` remember to specify your own data:
       twitter : username
 
 The theme should reference these variables whenever needed.
-    
+
+## Team
+{% for author in site.authors %}
+{{ site.authors.patrick.display_name }}
+{% endfor %}
+
+
 ## Sample Posts
 
 This blog contains sample posts which help stage pages and blog data.
@@ -34,7 +40,7 @@ Here's a sample "posts list".
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> by: {{post.author }}</li>
   {% endfor %}
 </ul>
 
