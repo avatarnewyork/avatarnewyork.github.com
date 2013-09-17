@@ -1,0 +1,14 @@
+---
+layout: post
+title: "How to use varnish cache with wordpress"
+description: ""
+category: Development
+tags: [featured]
+---
+{% include JB/setup %}
+
+Carrot cake jelly beans chocolate gummi bears biscuit sweet roll sweet roll chocolate cake. Chupa chups cake tootsie roll cake fruitcake croissant cake brownie. Liquorice chocolate cake carrot cake jelly-o candy canes sesame snaps powder sesame snaps. Unerdwear.com lemon drops apple pie danish croissant. Topping croissant carrot cake. Jujubes gummi bears pudding candy canes biscuit icing.
+Applicake gummies tart oat cake cupcake chocolate bar lemon drops danish sweet roll. Bonbon halvah chupa chups muffin marshmallow lemon drops. Bonbon apple pie gummi bears carrot cake bonbon wafer. Muffin gummies cookie croissant jelly dessert biscuit. Apple pie tart sweet roll. Gingerbread gummies donut pastry danish liquorice fruitcake tiramisu. Candy cupcake topping marzipan. Wafer marzipan lemon drops candy cake topping chocolate macaroon. Halvah jelly dessert bear claw chocolate pie.
+Halvah cookie marshmallow brownie. Dragée chocolate cookie wafer tiramisu. Bear claw sweet roll tiramisu. Tiramisu dessert candy tiramisu icing. Applicake chocolate cheesecake pie donut jelly-o tiramisu gummies wafer. Sugar plum chocolate cake applicake lollipop. Cookie cookie jujubes tiramisu chocolate cake sweet roll cotton candy sugar plum. Liquorice icing biscuit candy toffee tart apple pie powder. Dragée donut chocolate bar. Chupa chups jelly beans gingerbread oat cake jelly soufflé macaroon.
+Cookie sugar plum fruitcake fruitcake pie croissant. Lemon drops croissant oat cake halvah candy canes pastry danish chocolate cake brownie. Oat cake macaroon cotton candy fruitcake. Unerdwear.com sesame snaps bear claw sweet dessert. Chocolate bar unerdwear.com oat cake. Jelly gingerbread icing. Liquorice lollipop sweet roll. Cheesecake pastry caramels icing carrot cake lemon drops bear claw liquorice sesame snaps. Bear claw cotton candy dragée pudding chocolate bar dessert apple pie macaroon. Jelly beans wafer croissant.
+Icing tootsie roll lemon drops soufflé icing pastry. Soufflé halvah lollipop pastry toffee candy canes macaroon applicake wafer. Muffin toffee apple pie dessert caramels pudding. Tootsie roll bear claw bonbon caramels halvah jelly-o. Toffee fruitcake pie powder. Lemon drops topping cake applicake dessert muffin liquorice unerdwear.com candy canes. Unerdwear.com brownie macaroon chocolate bar cheesecake. Carrot cake tootsie roll toffee oat cake powder carrot cake lollipop pie. Marzipan cookie biscuit caramels. Candy gummi bears dragée pudding cotton candy powder pie.s

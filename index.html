@@ -1,0 +1,128 @@
+---
+layout: page
+---
+{% include JB/setup %}
+
+<div class="span12" id="featured-region">
+
+  <div class="left-inner">
+    <div id="left-inner-post">
+      <span class="post-category">{{ site.tags.featured[0].category }}</span>
+      <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[0].url }}">{{ site.tags.featured[0].title }}</a></h1>
+      
+      <span class="post-teaser">{{ site.tags.featured[0].content | strip_html | truncatewords:50}}</span>&nbsp;<a href="{{ post.url }}">Read on...</a> 
+    </div>
+  </div>
+
+  <div class="right-inner">
+    <div class="row-fluid">
+      <div id="right-inner-top" class="span12">
+        <div id="right-inner-top-post">
+          <span class="post-category">{{ site.tags.featured[1].category }}</span>
+          <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[1].url }}">{{ site.tags.featured[1].title }}</a></h1>
+        </div>
+      </div>
+      <div class="span12">
+        <div id="right-inner-bottom-post">
+          <span class="post-category">{{ site.tags.featured[2].category }}</span>
+          <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[2].url }}">{{ site.tags.featured[2].title }}</a></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="span12" id="bottom-region">
+
+    <div class="left-inner">
+      <div id="left-inner-bottom-container">
+        {% for post in paginator.posts  %}
+          {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
+          {% if remainder == "0" %}
+            {% if post.category == "Project" %}
+              <div id="left-inner-bottom-post-blue">
+                <span class="post-category">{{ post.category }}</span>
+                <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                <a href="{{ post.url }}">Read on...</a>
+              </div>
+            {% else %}
+              <div id="left-inner-bottom-post">
+                <span class="post-category">{{ post.category }}</span>
+                <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                <a href="{{ post.url }}">Read on...</a>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="right-inner">
+      <div id="right-inner-bottom-container" class="row-fluid">
+          <div class="span12">           
+            {% for post in paginator.posts %}
+            {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
+              {% if remainder == "1" %}
+                {% if post.category == "Project" %}
+                  <div class="right-inner-bottom-region-post-blue">
+                    <span class="post-category">{{ post.category }}</span>
+                    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                    <a href="{{ post.url }}">Read on...</a>
+                  </div>
+                  {% else %}
+                  <div class="right-inner-bottom-region-post">
+                    <span class="post-category">{{ post.category }}</span>
+                    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                    <a href="{{ post.url }}">Read on...</a>
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}            
+          </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <span class="previous">
+        {% if paginator.previous_page == 1 %}
+          <a href="/"><img src="{{ ASSET_PATH }}twitter/images/page-prev.png" /></a>
+        {% else %}
+          <a href="{{ paginator.previous_page_path }}"><img src="{{ ASSET_PATH }}twitter/images/page-prev.png" /></a>
+        {% endif %}
+      </span>
+    {% else %}
+      <span class="previous disabled">
+        <span><img src="" /></span>
+      </span>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <span class="next">
+        <a href="{{ paginator.next_page_path }}"><img src="{{ ASSET_PATH }}twitter/images/page-next.png" /></a>
+      </span>
+    {% else %}
+      <span class="next disabled">
+        <span><img src="{{ ASSET_PATH }}twitter/images/page-next.png" /></span>
+      </span>
+    {% endif %}
+
+  </div>
+
+
+<div class="row-fluid">
+  <div id="bottom-span" class="span12">
+    <div id="bottom-span-left" class="left-inner">
+    </div>
+    <div class="right-inner">
+    </div>
+  </div> 
+</div>
