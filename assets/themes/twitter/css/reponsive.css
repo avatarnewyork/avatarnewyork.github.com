@@ -5,7 +5,7 @@
 	}
 
 	.container .navbar .navbar-inner a.brand {
-		padding: 10px 0 0 50px;
+		padding: 10px 0 0 55px;
 	}
 
 	#featured-region .left-inner #left-inner-post{
@@ -88,6 +88,12 @@
 		width: 278px;
 	}
 
+	#search-results{
+		padding-left: 50px;
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;    
+		box-sizing: border-box; 
+	}
 }
  
 /* Landscape phone to portrait tablet */
@@ -236,6 +242,10 @@
 	li.dropdown a.dropdown-toggle {
 		padding: 5px 0px;
 
+	}
+
+	.entries a {
+    	display: block;
 	}
 
 }
