@@ -41,18 +41,22 @@ layout: page
           {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
           {% if remainder == "0" %}
             {% if post.category == "Project" %}
-              <div id="left-inner-bottom-post-blue">
-                <span class="post-category">{{ post.category }}</span>
-                <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
-                <a href="{{ post.url }}">Read on...</a>
+              <div class="waypoints-container">
+                <div id="left-inner-bottom-post-blue">
+                  <span class="post-category">{{ post.category }}</span>
+                  <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                  <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                  <a href="{{ post.url }}">Read on...</a>
+                </div>
               </div>
             {% else %}
-              <div id="left-inner-bottom-post">
-                <span class="post-category">{{ post.category }}</span>
-                <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
-                <a href="{{ post.url }}">Read on...</a>
+              <div class="waypoints-container">
+                <div id="left-inner-bottom-post">
+                  <span class="post-category">{{ post.category }}</span>
+                  <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                  <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                  <a href="{{ post.url }}">Read on...</a>
+                </div>
               </div>
             {% endif %}
           {% endif %}
@@ -66,18 +70,22 @@ layout: page
             {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
               {% if remainder == "1" %}
                 {% if post.category == "Project" %}
-                  <div class="right-inner-bottom-region-post-blue">
-                    <span class="post-category">{{ post.category }}</span>
-                    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
-                    <a href="{{ post.url }}">Read on...</a>
+                  <div class="waypoints-container">
+                    <div class="right-inner-bottom-region-post-blue">
+                      <span class="post-category">{{ post.category }}</span>
+                      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                      <a href="{{ post.url }}">Read on...</a>
+                    </div>
                   </div>
                   {% else %}
-                  <div class="right-inner-bottom-region-post">
-                    <span class="post-category">{{ post.category }}</span>
-                    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
-                    <a href="{{ post.url }}">Read on...</a>
+                  <div class="waypoints-container">
+                    <div class="right-inner-bottom-region-post">
+                      <span class="post-category">{{ post.category }}</span>
+                      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                      <a href="{{ post.url }}">Read on...</a>
+                    </div>
                   </div>
                 {% endif %}
               {% endif %}

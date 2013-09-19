@@ -16,23 +16,14 @@
     
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="{{ ASSET_PATH }}/js/waypoints.min.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="{{ ASSET_PATH }}/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ ASSET_PATH }}/js/mustache.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ ASSET_PATH }}/js/date.format.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ ASSET_PATH }}/js/URI.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ ASSET_PATH }}/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
-
-    <script type="text/javascript">
-      $(function() {
-        $('#search-query').lunrSearch({
-          indexUrl: '/search.json',             // URL of the `search.json` index data for your site
-          results:  '#search-results',          // jQuery selector for the search results container
-          entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
-          template: '#search-results-template'  // jQuery selector for the Mustache.js template
-        });
-      });
-    </script>
+    <script src="{{ ASSET_PATH }}/js/custom.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">

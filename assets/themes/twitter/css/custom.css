@@ -120,7 +120,12 @@ form.navbar-form > button {
 	height: auto;
 }
 
-#left-inner-bottom-post{	
+.waypoints-container{
+	display: block;
+	opacity: 0;
+}
+
+#left-inner-bottom-post{
 	height: auto;
 	width: 330px;
 	border: 1px solid #e1e1e1;
@@ -129,7 +134,7 @@ form.navbar-form > button {
 	position: relative;
 }
 
-#left-inner-bottom-post-blue{	
+#left-inner-bottom-post-blue{
 	height: auto;
 	width: 330px;
 	border: 1px solid #e1e1e1;
@@ -200,6 +205,7 @@ form.navbar-form > button {
 }
 
 .right-inner-bottom-region-post{
+	
 	height: auto;
 	width: 328px;
 	padding: 50px;
