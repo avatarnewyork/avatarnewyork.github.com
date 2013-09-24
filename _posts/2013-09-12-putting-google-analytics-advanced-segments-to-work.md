@@ -1,5 +1,6 @@
 ---
 layout: post
+author: patrick
 title: "Putting Google Analytics' Advanced Segments to Work"
 description: ""
 category: Development
