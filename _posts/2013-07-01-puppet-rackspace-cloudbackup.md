@@ -3,7 +3,7 @@ layout: post
 title: "Puppet Rackspace CloudBackup"
 description: "A puppet module for Rackspace Cloud Backups"
 author: patrick
-category: project
+category: Project
 tags: [devops,featured]
 ---
 {% include JB/setup %}
