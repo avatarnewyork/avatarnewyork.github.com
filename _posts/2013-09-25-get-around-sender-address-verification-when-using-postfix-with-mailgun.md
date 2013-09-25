@@ -2,10 +2,9 @@
 layout: post
 published: false
 title: Get around Sender Address Verification when using Postfix with Mailgun
-category: post
+category: Post
 description: Getting around sender address verification when using postfix with mailgun
-tags: 
-  - devops
+tags: [devops]
 author: patrick
 ---
 
