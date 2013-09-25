@@ -1,0 +1,52 @@
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://workshop.avatarnewyork.com'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'assets/media'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          placeholder: "Choose Category"
+          options:
+            - name: "Project"
+              value: "project"
+            - name: "Post"
+              value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          label: "Your First Name (lower case)"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Development"
+              value: "development"
+            - name: "Design"
+              value: "design"
+            - name: "UX/UI"
+              value: "uxui"
+            - name: "DevOps"
+              value: "devops"
+            - name: "FEATURED"
+              value: "featured"
