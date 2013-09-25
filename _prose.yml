@@ -5,6 +5,10 @@ prose:
   media: 'assets/media'
   metadata:
     _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
       - name: "category"
         field:
           element: "select"
@@ -20,7 +24,12 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "Author"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          value: ""
+      - name: "author"
         field:
           element: "text"
           label: "Your First Name (lower case)"
