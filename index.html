@@ -7,10 +7,17 @@ layout: page
 
   <div class="left-inner">
     <div id="left-inner-post">
-      <span class="post-category">{{ site.tags.featured[0].category }}</span>
+      
+        {% if site.tags.featured[0].tags[0] != "featured" %}
+          <span class="post-category">{{ site.tags.featured[0].tags[0] }}</span>
+        {% else %}
+          <span class="post-category">{{ site.tags.featured[0].tags[1] }}</span>
+        {% endif %}
+
+      
       <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[0].url }}">{{ site.tags.featured[0].title }}</a></h1>
       
-      <span class="post-teaser">{{ site.tags.featured[0].content | strip_html | truncatewords:50}}</span>&nbsp;<a href="{{ post.url }}">Read on...</a> 
+      <span class="post-teaser">{{ site.tags.featured[0].content | strip_html | truncatewords:50}}</span>&nbsp;<a href="{{ site.tags.featured[0].url }}">Read on...</a> 
     </div>
   </div>
 
@@ -18,13 +25,21 @@ layout: page
     <div class="row-fluid">
       <div id="right-inner-top" class="span12">
         <div id="right-inner-top-post">
-          <span class="post-category">{{ site.tags.featured[1].category }}</span>
+          {% if site.tags.featured[1].tags[0] != "featured" %}
+            <span class="post-category">{{ site.tags.featured[1].tags[0] }}</span>
+          {% else %}
+            <span class="post-category">{{ site.tags.featured[1].tags[1] }}</span>
+          {% endif %}
           <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[1].url }}">{{ site.tags.featured[1].title }}</a></h1>
         </div>
       </div>
       <div class="span12">
         <div id="right-inner-bottom-post">
-          <span class="post-category">{{ site.tags.featured[2].category }}</span>
+          {% if site.tags.featured[2].tags[0] != "featured" %}
+            <span class="post-category">{{ site.tags.featured[2].tags[0] }}</span>
+          {% else %}
+            <span class="post-category">{{ site.tags.featured[2].tags[1] }}</span>
+          {% endif %}
           <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[2].url }}">{{ site.tags.featured[2].title }}</a></h1>
         </div>
       </div>
@@ -43,7 +58,11 @@ layout: page
             {% if post.category == "Project" %}
               <div class="waypoints-container">
                 <div id="left-inner-bottom-post-blue">
-                  <span class="post-category">{{ post.category }}</span>
+                  {% if post.tags[0] != "featured" %}
+                    <span class="post-category">{{ post.tags[0] }}</span>
+                  {% else %}
+                    <span class="post-category">{{ post.tags[1] }}</span>
+                  {% endif %}
                   <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
                   <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
                   <a href="{{ post.url }}">Read on...</a>
@@ -52,7 +71,7 @@ layout: page
             {% else %}
               <div class="waypoints-container">
                 <div id="left-inner-bottom-post">
-                  <span class="post-category">{{ post.category }}</span>
+                  <span class="post-category">{{ post.tags[0] }}</span>
                   <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
                   <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
                   <a href="{{ post.url }}">Read on...</a>
@@ -72,7 +91,11 @@ layout: page
                 {% if post.category == "Project" %}
                   <div class="waypoints-container">
                     <div class="right-inner-bottom-region-post-blue">
-                      <span class="post-category">{{ post.category }}</span>
+                      {% if post.tags[0] != "featured" %}
+                        <span class="post-category">{{ post.tags[0] }}</span>
+                      {% else %}
+                        <span class="post-category">{{ post.tags[1] }}</span>
+                      {% endif %}
                       <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
                       <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
                       <a href="{{ post.url }}">Read on...</a>
@@ -81,7 +104,7 @@ layout: page
                   {% else %}
                   <div class="waypoints-container">
                     <div class="right-inner-bottom-region-post">
-                      <span class="post-category">{{ post.category }}</span>
+                      <span class="post-category">{{ post.tags[0] }}</span>
                       <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
                       <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
                       <a href="{{ post.url }}">Read on...</a>

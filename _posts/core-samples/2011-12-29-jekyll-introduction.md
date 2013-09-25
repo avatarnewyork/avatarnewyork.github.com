@@ -1,8 +1,8 @@
 ---
 layout: post
-category : Development
+category : Post
 tagline: "Supporting tagline"
-tags : []
+tags : [development]
 ---
 {% include JB/setup %}
 

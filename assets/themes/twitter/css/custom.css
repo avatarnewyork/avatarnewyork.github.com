@@ -13,6 +13,15 @@
 	margin-top: 25px;
 }
 
+.footer-site-name a{
+	color: #4ec5e0;
+}
+
+.footer-site-name a:hover, .footer-site-name a:active{
+	color: #4ec5e0;
+	text-decoration: none;
+}
+
 .container .navbar .navbar-inner a.brand{
 	font-size: 14px;
 	color: #4ec5e0;

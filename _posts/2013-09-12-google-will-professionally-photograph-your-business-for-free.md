@@ -2,8 +2,8 @@
 layout: post
 title: "Google will Professionally Photograph your Business for FREE"
 description: ""
-category: Development
-tags: [featured]
+category: Post
+tags: [development]
 ---
 {% include JB/setup %}
 
