@@ -12,16 +12,15 @@ Markdown is awsome but it's annoying how you can't include embed tags, especiall
 
 1. Download and add this [gist_tag.rb](https://gist.github.com/imathis/1027674) to your _plugins dir
 2. Now in your markdown, you just need to include the costom tag to embed a gist like:
-`{% gist 123435235 %}`
+{% raw %}
 
+{% gist 6706249 %}
+
+{% endraw %}
 If you experience any issues, you might want to ensure your using [Redcarpet](https://github.com/vmg/redcarpet) as your markdown engine:
 
 1. Install the redcarpet gem:
 `$ [sudo] gem install redcarpet`
 2. Configure Jekyll to use redcarpet with extensions - edit _config.yml
 
-```
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-```
+{% gist 6706249 %}
