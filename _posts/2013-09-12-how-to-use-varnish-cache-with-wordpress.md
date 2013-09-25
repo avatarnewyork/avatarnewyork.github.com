@@ -2,8 +2,8 @@
 layout: post
 title: "How to use varnish cache with wordpress"
 description: ""
-category: Development
-tags: [featured]
+category: Post
+tags: [development]
 ---
 {% include JB/setup %}
 
