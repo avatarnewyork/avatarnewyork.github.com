@@ -16,9 +16,9 @@ prose:
           placeholder: "Choose Category"
           options:
             - name: "Project"
-              value: "project"
+              value: "Project"
             - name: "Post"
-              value: "post"
+              value: "Post"
       - name: "title"
         field:
           element: "text"
