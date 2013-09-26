@@ -52,8 +52,13 @@ layout: page
 
     <div class="left-inner">
       <div id="left-inner-bottom-container">
-        {% for post in paginator.posts  %}
-          {% if post != site.tags.featured[0] and post != site.tags.featured[1] and post != site.tags.featured[2] %}
+
+        
+        {% assign remaining_posts = paginator.posts | filter_post_by_tags %}
+
+        {% for post in remaining_posts %}
+
+
             {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
               {% if remainder == "0" %}
                 {% if post.category == "Project" %}
@@ -65,7 +70,7 @@ layout: page
                         <span class="post-category">{{ post.tags[1] }}</span>
                       {% endif %}
                       <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
                       <a href="{{ post.url }}">Read on...</a>
                     </div>
                   </div>
@@ -74,21 +79,21 @@ layout: page
                   <div id="left-inner-bottom-post">
                     <span class="post-category">{{ post.tags[0] }}</span>
                     <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
                     <a href="{{ post.url }}">Read on...</a>
                   </div>
                 </div>
               {% endif %}
             {% endif %}
-          {% endif %}
+
         {% endfor %}
       </div>
     </div>
     <div class="right-inner">
       <div id="right-inner-bottom-container" class="row-fluid">
         <div class="span12">           
-          {% for post in paginator.posts %}
-            {% if post != site.tags.featured[0] and post != site.tags.featured[1] and post != site.tags.featured[2] %}
+          {% for post in remaining_posts %}
+
               {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
                 {% if remainder == "1" %}
                   {% if post.category == "Project" %}
@@ -100,7 +105,7 @@ layout: page
                           <span class="post-category">{{ post.tags[1] }}</span>
                         {% endif %}
                         <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
                         <a href="{{ post.url }}">Read on...</a>
                       </div>
                     </div>
@@ -109,13 +114,13 @@ layout: page
                       <div class="right-inner-bottom-region-post">
                         <span class="post-category">{{ post.tags[0] }}</span>
                         <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
                         <a href="{{ post.url }}">Read on...</a>
                       </div>
                     </div>
                   {% endif %}
                 {% endif %}
-              {% endif %}  
+ 
             {% endfor %}            
           </div>
       </div>
