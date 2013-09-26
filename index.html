@@ -53,30 +53,32 @@ layout: page
     <div class="left-inner">
       <div id="left-inner-bottom-container">
         {% for post in paginator.posts  %}
-          {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
-          {% if remainder == "0" %}
-            {% if post.category == "Project" %}
-              <div class="waypoints-container">
-                <div id="left-inner-bottom-post-blue">
-                  {% if post.tags[0] != "featured" %}
+          {% if post != site.tags.featured[0] and post != site.tags.featured[1] and post != site.tags.featured[2] %}
+            {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
+              {% if remainder == "0" %}
+                {% if post.category == "Project" %}
+                  <div class="waypoints-container">
+                    <div id="left-inner-bottom-post-blue">
+                      {% if post.tags[0] != "featured" %}
+                        <span class="post-category">{{ post.tags[0] }}</span>
+                      {% else %}
+                        <span class="post-category">{{ post.tags[1] }}</span>
+                      {% endif %}
+                      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                      <a href="{{ post.url }}">Read on...</a>
+                    </div>
+                  </div>
+                {% else %}
+                <div class="waypoints-container">
+                  <div id="left-inner-bottom-post">
                     <span class="post-category">{{ post.tags[0] }}</span>
-                  {% else %}
-                    <span class="post-category">{{ post.tags[1] }}</span>
-                  {% endif %}
-                  <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                  <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
-                  <a href="{{ post.url }}">Read on...</a>
+                    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
+                    <a href="{{ post.url }}">Read on...</a>
+                  </div>
                 </div>
-              </div>
-            {% else %}
-              <div class="waypoints-container">
-                <div id="left-inner-bottom-post">
-                  <span class="post-category">{{ post.tags[0] }}</span>
-                  <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                  <span class="post-teaser">{{ post.content | strip_html | truncatewords:50}}</span>
-                  <a href="{{ post.url }}">Read on...</a>
-                </div>
-              </div>
+              {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}
@@ -84,34 +86,36 @@ layout: page
     </div>
     <div class="right-inner">
       <div id="right-inner-bottom-container" class="row-fluid">
-          <div class="span12">           
-            {% for post in paginator.posts %}
-            {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
-              {% if remainder == "1" %}
-                {% if post.category == "Project" %}
-                  <div class="waypoints-container">
-                    <div class="right-inner-bottom-region-post-blue">
-                      {% if post.tags[0] != "featured" %}
+        <div class="span12">           
+          {% for post in paginator.posts %}
+            {% if post != site.tags.featured[0] and post != site.tags.featured[1] and post != site.tags.featured[2] %}
+              {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
+                {% if remainder == "1" %}
+                  {% if post.category == "Project" %}
+                    <div class="waypoints-container">
+                      <div class="right-inner-bottom-region-post-blue">
+                        {% if post.tags[0] != "featured" %}
+                          <span class="post-category">{{ post.tags[0] }}</span>
+                        {% else %}
+                          <span class="post-category">{{ post.tags[1] }}</span>
+                        {% endif %}
+                        <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                        <a href="{{ post.url }}">Read on...</a>
+                      </div>
+                    </div>
+                    {% else %}
+                    <div class="waypoints-container">
+                      <div class="right-inner-bottom-region-post">
                         <span class="post-category">{{ post.tags[0] }}</span>
-                      {% else %}
-                        <span class="post-category">{{ post.tags[1] }}</span>
-                      {% endif %}
-                      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
-                      <a href="{{ post.url }}">Read on...</a>
+                        <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
+                        <a href="{{ post.url }}">Read on...</a>
+                      </div>
                     </div>
-                  </div>
-                  {% else %}
-                  <div class="waypoints-container">
-                    <div class="right-inner-bottom-region-post">
-                      <span class="post-category">{{ post.tags[0] }}</span>
-                      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:25}}</span>
-                      <a href="{{ post.url }}">Read on...</a>
-                    </div>
-                  </div>
+                  {% endif %}
                 {% endif %}
-              {% endif %}
+              {% endif %}  
             {% endfor %}            
           </div>
       </div>

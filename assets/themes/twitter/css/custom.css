@@ -324,6 +324,19 @@ form.navbar-form > button {
 	padding-top: 25px;
 }
 
+.page-header h1{
+	color: #666666;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.post-full .content{
+	font-size: 14px;
+    line-height: 30px;
+}
+
+
+
 
 
 
