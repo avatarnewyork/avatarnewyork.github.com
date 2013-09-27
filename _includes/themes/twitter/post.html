@@ -9,7 +9,8 @@
     <div class="span12">
       <div class="date">
       <p>
-        <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}.png?s=40" /> by {{ author.display_name }}
+	<div class="circular" style="background: url(http://www.gravatar.com/avatar/{{ author.gravatar }}.png?s=70)"></div>
+        by {{ author.display_name }}
       </p> <!-- /.byline -->
         <span>{{ page.date | date_to_long_string }}</span>
       </div>

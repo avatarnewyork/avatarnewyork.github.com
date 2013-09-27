@@ -335,11 +335,11 @@ form.navbar-form > button {
     line-height: 30px;
 }
 
-
-
-
-
-
-
-
-
+.circular {
+	  width: 70px;
+	  height: 70px;
+	  border-radius: 35px;
+	  -webkit-border-radius: 35px;
+	  -moz-border-radius: 35px;
+	  background: url(http://www.gravatar.com/avatar/0da8eb0a2f5f99fce171feeba51d1fea.png?s=70) no-repeat;
+	  }
