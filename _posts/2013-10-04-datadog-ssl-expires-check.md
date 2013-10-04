@@ -2,11 +2,11 @@
 layout: post
 title: DataDog SSL Expires Check
 author: patrick
-description: null
+description: SSL Expires Check is a DataDog Monitor plugin written in python that tracks days remaining until an SSL certificate expires
 category: Project
 tags: 
   - devops
-published: false
+published: true
 ---
 
 {% include JB/setup %}
