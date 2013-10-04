@@ -62,7 +62,7 @@ description: Open Source Project's and articles on web development, web design, 
 
 
             {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
-              {% if remainder == "0" %}
+              {% if remainder == "1" %}
                 {% if post.category == "Project" %}
                   <div class="waypoints-container">
                     <div id="left-inner-bottom-post-blue">
@@ -97,7 +97,7 @@ description: Open Source Project's and articles on web development, web design, 
           {% for post in remaining_posts %}
 
               {% capture remainder %}{{ forloop.index | modulo: 2 }}{% endcapture %}
-                {% if remainder == "1" %}
+                {% if remainder == "0" %}
                   {% if post.category == "Project" %}
                     <div class="waypoints-container">
                       <div class="right-inner-bottom-region-post-blue">
