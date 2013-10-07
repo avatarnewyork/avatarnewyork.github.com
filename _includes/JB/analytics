@@ -1,4 +1,4 @@
-{% if site.safe and site.JB.analytics.provider and page.JB.analytics != false %}
+{% if site.JB.analytics.provider and page.JB.analytics != false %}
 
 {% case site.JB.analytics.provider %}
 {% when "google" %}
@@ -7,6 +7,8 @@
   {% include JB/analytics-providers/getclicky %}
 {% when "mixpanel" %}
   {% include JB/analytics-providers/mixpanel %}
+{% when "googletagmanager" %}
+  {% include JB/analytics-providers/googletagmanager %}
 {% when "custom" %}
   {% include custom/analytics %}
 {% endcase %}
