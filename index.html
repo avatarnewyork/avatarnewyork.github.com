@@ -33,6 +33,7 @@ description: Open Source Project's and articles on web development, web design, 
             <span class="post-category">{{ site.tags.featured[1].tags[1] }}</span>
           {% endif %}
           <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[1].url }}">{{ site.tags.featured[1].title }}</a></h1>
+          <span class="post-teaser">{{ site.tags.featured[1].content | strip_html | truncatewords:15}}</span>&nbsp;<a href="{{ site.tags.featured[1].url }}">Read on...</a> 
         </div>
       </div>
       <div class="span12">
@@ -43,6 +44,7 @@ description: Open Source Project's and articles on web development, web design, 
             <span class="post-category">{{ site.tags.featured[2].tags[1] }}</span>
           {% endif %}
           <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[2].url }}">{{ site.tags.featured[2].title }}</a></h1>
+          <span class="post-teaser">{{ site.tags.featured[2].content | strip_html | truncatewords:15}}</span>&nbsp;<a href="{{ site.tags.featured[2].url }}">Read on...</a> 
         </div>
       </div>
     </div>

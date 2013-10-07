@@ -80,6 +80,9 @@ form.navbar-form > button {
 
 .entries a{
 	color: #4ec5e0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 2.6em;
 }
 
 
@@ -191,6 +194,15 @@ form.navbar-form > button {
 .post-teaser{
 	font-size: 14px;
 	line-height: 30px;
+}
+
+.right-inner a{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.right-inner h1 a{
+	text-decoration: none;
 }
 
 
@@ -323,6 +335,10 @@ form.navbar-form > button {
 	text-align: center;
 	padding-top: 25px;
 }
+.page-header{
+	border-bottom: none;
+	margin: 50px 0 0;
+}
 
 .page-header h1{
 	color: #666666;
@@ -333,13 +349,63 @@ form.navbar-form > button {
 .post-full .content{
 	font-size: 14px;
     line-height: 30px;
+    border-top: solid 1px #e1e1e1;
+    padding-top: 25px;
+
 }
 
 .circular {
-	  width: 70px;
-	  height: 70px;
-	  border-radius: 35px;
-	  -webkit-border-radius: 35px;
-	  -moz-border-radius: 35px;
-	  background: url(http://www.gravatar.com/avatar/0da8eb0a2f5f99fce171feeba51d1fea.png?s=70) no-repeat;
-	  }
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	background: url(http://www.gravatar.com/avatar/0da8eb0a2f5f99fce171feeba51d1fea.png?s=70) no-repeat;
+	margin: 0 auto;
+}
+
+#search-query{
+	color: #666;
+}
+#search-results{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: 16px;
+}
+
+#search-results p{
+	font-size: 14px;
+	font-family: 'Georgia';
+	font-style: italic;
+	color: #666666;
+}
+
+#top{
+	border-top: solid 1px #e1e1e1;
+}
+
+.post-full .date {
+	text-align: center;
+	font-size: 10px;
+	color: #666;
+}
+
+.addthis_toolbox{
+	margin: 0 auto;
+	width: 100px;
+}
+
+.author{
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: solid 1px #e1e1e1;
+}
+
+.span3 ul.tag_box li{
+ 	padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+
+

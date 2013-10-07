@@ -94,6 +94,13 @@
 		-moz-box-sizing: border-box;    
 		box-sizing: border-box; 
 	}
+
+	.post-full .content{
+		padding-left: 50px;
+	}
+	.page-header {
+    	padding-left: 50px;
+	}
 }
  
 /* Landscape phone to portrait tablet */

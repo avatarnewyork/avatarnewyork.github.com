@@ -30,6 +30,7 @@
       this.indexDataUrl = options.indexUrl;
       this.index = this.createIndex();
       this.template = this.compileTemplate($(options.template));
+      this.onDisplay = options.onDisplay;
       
       this.initialize();
     };
@@ -133,6 +134,7 @@
       }
       
       $results.show();
+      this.onDisplay();
     };
     
     // Populate the search input with 'q' querystring parameter if set
@@ -163,6 +165,9 @@
     indexUrl  : '/search.json',     // Url for the .json file containing search index source data (containing: title, url, date, body)
     results   : '#search-results',  // selector for containing search results element
     entries   : '.entries',         // selector for search entries containing element (contained within results above)
-    template  : '#search-results-template'  // selector for Mustache.js template
+    template  : '#search-results-template',  // selector for Mustache.js template
+    onDisplay: function(){
+
+    }
   };
 })(jQuery);
