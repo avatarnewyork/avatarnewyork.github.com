@@ -24,7 +24,7 @@
         <div class="circular" style="background: url(http://www.gravatar.com/avatar/{{ author.gravatar }}.png?s=70)"></div>      
         <span itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d %B %Y" }}</span> &middot; By: 
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-	  <span itemprop="name"><a href="https://plus.google.com/101658954327550538444?rel=author">{{ author.display_name }}</a></span>
+	  <span itemprop="name"><a href="https://plus.google.com/{{ author.gplusid }}?rel=author">{{ author.display_name }}</a></span>
 	</span>
       </div>
 

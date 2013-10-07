@@ -39,18 +39,29 @@ authors:
     name: Patrick Tully
     display_name: Patrick
     gravatar: e630af8393ee16908179ae7b088b4553
+    gplusid: 101658954327550538444
     email: patrick@avatarnewyork.com
     web: http://avatarnewyork.com
     twitter: mrpatrick
     github: mrpatrick
   ben:
     name: Ben Zajac
-    display_name: Ben 
+    display_name: Ben
     gravatar: 44c4eecdd0f4886136c6bd3482c12a02
+    gplusid: 112499162197679361574
     email: ben@avatarnewyork.com
     web: http://avatarnewyork.com
     twitter: avatarnewyork
     github: zajax
+  jonathan:
+    name: Jonathan Kraska
+    display_name: Jonathan
+    gravatar: 44c4eecdd0f4886136c6bd3482c12a02
+    gplusid: 104811450303217968901
+    email: jonathan@avatarnewyork.com
+    web: http://avatarnewyork.com
+    twitter: avatarnewyork
+    github: jakraska
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
