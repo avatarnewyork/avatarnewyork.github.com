@@ -1,5 +1,6 @@
 ---
 layout: post
+author: patrick
 title: "AddThis Social Tracking in Google Analytics"
 description: ""
 category: Post
