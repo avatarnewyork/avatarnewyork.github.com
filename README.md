@@ -44,7 +44,9 @@ Here is the breakdown:
 * tags: in yaml format - if this project should be featured, add `featured` to the tag
 * published: should be true
 
-6. When ready to publish, commit and push to the master branch.  Your post will appear in a few minutes.
+6. To test your post, goto your project dir and run: `jekyll build`.  This will rebuild the site and store under _site
+7. Test your post by going to the URL
+8. When ready to publish, commit and push to the master branch.  Your post will appear in a few minutes.
 
 ### Avatar Workshop Workflow - Use http://prose.io
 
