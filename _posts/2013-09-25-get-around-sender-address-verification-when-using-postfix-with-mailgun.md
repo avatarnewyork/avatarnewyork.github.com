@@ -1,11 +1,12 @@
 ---
 layout: post
-published: false
-title: Get around Sender Address Verification when using Postfix with Mailgun
-category: Post
-description: Getting around sender address verification when using postfix with mailgun
-tags: [devops]
 author: patrick
+title: "Get around Sender Address Verification when using Postfix with Mailgun"
+description: ""
+category: Post
+tags:
+  - devops
+published: true  
 ---
 
 We use [Postfix](http://www.postfix.org/) with [Mailgun](http://mailgun.com) as our  relay host.  We came accross an issue the other day where mail that was being sent and received by the same domain was bouncing.  Below is what happened and how we fixed it.
