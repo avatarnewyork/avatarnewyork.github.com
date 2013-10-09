@@ -2,7 +2,7 @@
 layout: post
 author: patrick
 title: "Embed Gist Tag in Jekyll"
-description: "Jekyll Gist Tag"
+description: "how-to add a Jekyll Gist Tag"
 category: Post
 tags: 
   - development

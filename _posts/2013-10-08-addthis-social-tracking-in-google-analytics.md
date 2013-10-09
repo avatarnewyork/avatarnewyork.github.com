@@ -2,7 +2,7 @@
 layout: post
 author: patrick
 title: "AddThis Social Tracking in Google Analytics"
-description: ""
+description: "how-to get AddThis social tracking in Google Analytics"
 category: Post
 tags: 
   - development

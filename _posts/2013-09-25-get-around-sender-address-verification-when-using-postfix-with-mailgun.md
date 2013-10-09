@@ -2,7 +2,7 @@
 layout: post
 author: patrick
 title: "Get around Sender Address Verification when using Postfix with Mailgun"
-description: ""
+description: "how-to get around sender address verification when using postfix with mailgun"
 category: Post
 tags:
   - devops
