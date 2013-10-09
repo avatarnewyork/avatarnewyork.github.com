@@ -6,8 +6,10 @@ description: "how-to get around sender address verification when using postfix w
 category: Post
 tags:
   - devops
+image: /assets/media/mail_gun_gun.png
 published: true  
 ---
+![MailGun Postfix](/assets/media/mail_gun_gun.png)
 
 We use [Postfix](http://www.postfix.org/) with [Mailgun](http://mailgun.com) as our  relay host.  We came accross an issue the other day where mail that was being sent and received by the same domain was bouncing.  Below is what happened and how we fixed it.
 

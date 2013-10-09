@@ -6,6 +6,7 @@ description: SSL Expires Check is a DataDog Monitor plugin written in python tha
 category: Project
 tags: 
   - devops
+image: /assets/media/datadog_ssl_expires_in_graph.png
 published: true
 ---
 

@@ -10,7 +10,11 @@
     <meta property="og:description" content="{{ page.description }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ site.production_url }}{{ page.url }}">
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.production_url }}b{{ page.image }}">
+    {% else %}
     <meta property="og:image" content="http://chart.apis.google.com/chart?cht=qr&chs=500x500&choe=UTF-8&chld=H&chl={{ site.production_url }}{{ page.url }}">
+    {% endif %}
     <meta property="og:site_name" content="Workshop">
     <meta property="fb:admins" content="563471897039853">
     <!-- end OpenGraph -->

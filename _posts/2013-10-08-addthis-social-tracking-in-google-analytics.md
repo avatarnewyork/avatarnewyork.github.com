@@ -2,10 +2,11 @@
 layout: post
 author: patrick
 title: "AddThis Social Tracking in Google Analytics"
-description: "how-to get AddThis social tracking in Google Analytics"
+description: "How To add addthis social tracking in google analytics."
 category: Post
 tags: 
   - development
+image: /assets/media/addthis_social_tracking.png
 published: true
 ---
 {% include JB/setup %}
