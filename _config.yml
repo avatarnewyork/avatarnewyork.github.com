@@ -21,7 +21,7 @@ author :
   name : Avatar New York
   email : software@avatarnewyork.com
   github : avatarnewyork
-  twitter : avatarnewyork
+  twitter : @avatarnewyork
   feedburner : avatarnewyork
 
 # The production_url is only used when full-domain names are needed
@@ -42,7 +42,7 @@ authors:
     gplusid: 101658954327550538444
     email: patrick@avatarnewyork.com
     web: http://avatarnewyork.com
-    twitter: mrpatrick
+    twitter: @mrpatrick
     github: mrpatrick
   ben:
     name: Ben Zajac
@@ -51,7 +51,7 @@ authors:
     gplusid: 112499162197679361574
     email: ben@avatarnewyork.com
     web: http://avatarnewyork.com
-    twitter: avatarnewyork
+    twitter: @avatarnewyork
     github: zajax
   jonathan:
     name: Jonathan Kraska
@@ -60,7 +60,7 @@ authors:
     gplusid: 104811450303217968901
     email: jonathan@avatarnewyork.com
     web: http://avatarnewyork.com
-    twitter: avatarnewyork
+    twitter: @avatarnewyork
     github: jakraska
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
