@@ -4,7 +4,9 @@ author: patrick
 title: "Embed Gist Tag in Jekyll"
 description: "Jekyll Gist Tag"
 category: Post
-tags: [development]
+tags: 
+  - development
+published: true
 ---
 {% include JB/setup %}
 
