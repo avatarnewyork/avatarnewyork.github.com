@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem 'syntax', '1.0.0'
-gem 'liquid', '2.5.2'
+gem 'liquid'
 gem 'jekyll'
 gem 'redcarpet'
 gem 's3_website', '1.4.3'
