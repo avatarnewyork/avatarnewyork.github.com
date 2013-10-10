@@ -6,7 +6,7 @@ description: "How To add addthis social tracking in google analytics."
 category: Post
 tags: 
   - development
-image: /assets/media/addthis_social_tracking.png
+image: "/assets/media/addthis_social_tracking.png"
 published: true
 ---
 {% include JB/setup %}

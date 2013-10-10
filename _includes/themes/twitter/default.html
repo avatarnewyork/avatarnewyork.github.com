@@ -11,7 +11,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ site.production_url }}{{ page.url }}">
     {% if page.image %}
-    <meta property="og:image" content="{{ site.production_url }}b{{ page.image }}">
+    <meta property="og:image" content="{{ site.production_url }}{{ page.image }}">
     {% else %}
     <meta property="og:image" content="http://chart.apis.google.com/chart?cht=qr&chs=500x500&choe=UTF-8&chld=H&chl={{ site.production_url }}{{ page.url }}">
     {% endif %}
@@ -19,8 +19,9 @@
     <meta property="fb:admins" content="563471897039853">
     <!-- end OpenGraph -->
     <!-- TwitterCard -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="{{ site.production_url }}{{ page.url }}"> <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.production_url }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:site:id" content="{{ site.author.twitter }}">
     <meta name="twitter:description" content="{{ page.description }}">
     <!-- end TwitterCard -->

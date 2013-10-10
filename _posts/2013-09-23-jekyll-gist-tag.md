@@ -6,7 +6,7 @@ description: "how-to add a Jekyll Gist Tag"
 category: Post
 tags: 
   - development
-image: /assets/media/jekyll_plus_gist.png
+image: "/assets/media/jekyll_plus_gist.png"
 published: true
 ---
 {% include JB/setup %}
