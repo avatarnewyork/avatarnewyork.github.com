@@ -20,8 +20,8 @@ For all usage and documentation for Jekyll-Bootstrap, please see: <http://jekyll
 3. at the command prompt type: `rake post title="TITLE_OF_YOUR_POST"`.  This will setup the meta info and filename for your post located under `_posts`.
 4. Open your post file: `_posts/YYYY-mm-dd-title.md` (markdown file)
 5. Edit your meta information (called [Front Matter in yaml](http://jekyllrb.com/docs/frontmatter/)) and article content.  Meta information is as follows:
+
 ```yaml
----
 layout: post
 title: TITLE_HERE
 author: YOUR_NAME
@@ -30,23 +30,26 @@ category: [Project || Post]
 tags: 
   - featured
   - development
+image: /assets/media/SOME_IMAGE_FILE.png
 published: true
----
 ```
 
 Here is the breakdown:
 
-* layout: post (always)
-* title: title of your post
-* author: your first name
-* description: brief description of article
-* category: Can be either `Project` or `Post` (case sensitive)
-* tags: in yaml format - if this project should be featured, add `featured` to the tag
-* published: should be true
+* __layout__: post (always)
+* __title__: title of your post
+* __author__: your first name
+* __description__: brief description of article - used as META-DESCRIPTION tag so it's now important!
+* __category__: Can be either `Project` or `Post` (case sensitive)
+* __tags__: in yaml format - if this project should be featured, add `featured` to the tag
+* __image__: Image to be used in structured data so this is now important!  Maybe used in future to display on homepage.
+* __published__: should be true
 
-6. To test your post, goto your project dir and run: `jekyll build`.  This will rebuild the site and store under _site
-7. Test your post by going to the URL
-8. When ready to publish, commit and push to the master branch.  Your post will appear in a few minutes.
+6. Edit your content
+7. Be sure to include `{% excerpt %}` and `{% endexcerpt %}` tags around the content you want to show up as an excerp on the homepage.
+8. To test your post, goto your project dir and run: `jekyll build`.  This will rebuild the site and store under _site
+9. Test your post by going to the URL
+10. When ready to publish, commit and push to the master branch.  Your post will appear in a few minutes.
 
 ### Avatar Workshop Workflow - Use http://prose.io
 
@@ -56,7 +59,8 @@ Here is the breakdown:
 4. Click on the `NEW FILE` BUTTON
 5. Click on the Meta-Data button on the right and edit appropriately (see above)
 6. Click back on the Edit button and edit content appropriately
-7. When done, press `Save` and enter commit message.  Your post should appear in a few minutes
+7. Be sure to include `{% excerpt %}` and `{% endexcerpt %}` tags around the content you want to show up as an excerp on the homepage.
+8. When done, press `Save` and enter commit message.  Your post should appear in a few minutes
 
 
 ## Version
