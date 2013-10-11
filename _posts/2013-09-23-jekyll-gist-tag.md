@@ -11,7 +11,11 @@ published: true
 ---
 {% include JB/setup %}
 
-Markdown is awsome but it's annoying how you can't include embed tags, especially gists.  Well you can actually, you just need to include a custom plugin and use the custom gist tag.  Here is how:
+{% excerpt %}
+
+Markdown is awesome but it's annoying how you can't include embed tags, especially gists.  Well you can actually, you just need to include a custom plugin and use the custom gist tag.  Here is how:
+
+{% endexcerpt %} 
 
 1. Download and add this [gist_tag.rb](https://gist.github.com/imathis/1027674) to your _plugins dir
 2. Now in your markdown, you just need to include the costom tag to embed a gist like:

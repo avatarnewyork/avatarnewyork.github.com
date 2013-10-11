@@ -13,7 +13,11 @@ published: true
 
 ![MailGun Postfix](/assets/media/mail_gun_gun.png)
 
+{% excerpt %}
+
 We use [Postfix](http://www.postfix.org/) with [Mailgun](http://mailgun.com) as our  relay host.  We came accross an issue the other day where mail that was being sent and received by the same domain was bouncing.  Below is what happened and how we fixed it.
+
+{% endexcerpt %}
 
 ### The Issue
 Mail being sent and received by the website domain was being rejected.  Looking at the mailgun logs we noticed we the messages were bouncing with an error code 553 (take a look at: http://www.inmotionhosting.com/support/email/email-troubleshooting/email-error-553 for similar error messages).  To compound the issue, everytime it bounched, the receiver was flagged in the `Bounches`.

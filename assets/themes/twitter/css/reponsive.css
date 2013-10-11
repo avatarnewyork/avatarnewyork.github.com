@@ -101,6 +101,16 @@
 	.page-header {
     	padding-left: 50px;
 	}
+
+	.open > .dropdown-menu {
+	    display: block;
+	    left: -115px;
+	    position: absolute;
+	}
+
+	.navbar .nav > li > .dropdown-menu:after, .navbar .nav > li > .dropdown-menu:before{
+		left: 130px;
+	}
 }
  
 /* Landscape phone to portrait tablet */
@@ -216,7 +226,7 @@
 		content: none;
 	}
 
-	h1{
+	h1, h2{
 		margin: 0;
 		line-height: 20px;
 	}
@@ -226,7 +236,7 @@
 		line-height: 1em;
 	}
 
-	h1 a {
+	h1 a, h2 a {
 		font-size: 20px !important;
 		line-height: 1em;
 	}
@@ -260,7 +270,28 @@
     	display: block;
 	}
 
+	.open > .dropdown-menu {
+	    display: block;
+	    left: -143px;
+	    position: absolute;
+	}
+
+	.navbar .nav > li > .dropdown-menu:after, .navbar .nav > li > .dropdown-menu:before{
+		left: 145px;
+	}
+
 }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { ... }
+@media (max-width: 480px) {  
+
+	.open > .dropdown-menu {
+	    display: block;
+	    left: -143px;
+	    position: absolute;
+	}
+
+	.navbar .nav > li > .dropdown-menu:after, .navbar .nav > li > .dropdown-menu:before{
+		left: 145px;
+	}
+}
