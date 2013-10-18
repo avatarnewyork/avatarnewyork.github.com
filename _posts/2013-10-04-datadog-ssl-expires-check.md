@@ -12,7 +12,13 @@ published: true
 
 {% include JB/setup %}
 
-We created the [ssl_check_expire_days.py](https://gist.github.com/mrpatrick/6829734 "SSL Check Expire Days DataDog Plugin") plugin for the [DataDog Monitoring Service](http://datadoghq.com "DataDog Monitoring") which we use as one of our many monitoring platforms.  This plugin allows you to pass it multiple SSL certificates installed on a server and keep tabs on how many days left until it is set to expire.
+{% excerpt %}
+
+We created the [ssl_check_expire_days.py](https://gist.github.com/mrpatrick/6829734 "SSL Check Expire Days DataDog Plugin") plugin for the [DataDog Monitoring Service](http://datadoghq.com "DataDog Monitoring") which we use as one of our many monitoring platforms.  
+
+{% endexcerpt %}
+
+This plugin allows you to pass it multiple SSL certificates installed on a server and keep tabs on how many days left until it is set to expire.
 
 ![Datadog SSL Expires Graph](/assets/media/datadog_ssl_expires_in_graph.png)
 > The Graph above shows what happens when we installed an updated certificate.

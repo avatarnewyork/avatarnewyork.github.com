@@ -9,9 +9,19 @@ tags:
 image: "/assets/media/addthis_social_tracking.png"
 published: true
 ---
+
+
+
+
+
+
 {% include JB/setup %}
 
+{% excerpt %}
+
 If your using [AddThis](http://addthis.com) for social share tracking, you can easily enable Google analytics social engagement tracking by adding the following code to the existing [AddThis Javascript Code](http://support.addthis.com/customer/portal/articles/381263-addthis-sharing-button-api#.UlQmXWRAQiU)
+
+{% endexcerpt %}
 
 {% gist 6886495 %}
 
