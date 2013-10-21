@@ -21,11 +21,12 @@ $(document).ready(function(){
     $(".waypoints-container").waypoint({
         handler: function (direction){
        		if (direction === "down"){
-            	$(this).delay(500).animate({opacity: 1});
+            	$(this).delay(250).animate({opacity: 1}, 200);
           	}
         },
         offset: '100%'
     });
-
 });
+
+
 

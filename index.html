@@ -19,7 +19,7 @@ description: Open Source Project's and articles on web development, web design, 
       
       <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[0].url }}">{{ site.tags.featured[0].title }}</a></h1>
       
-      <span class="post-teaser">{{ site.tags.featured[0].content | strip_html | truncatewords:50}}</span>&nbsp;<a href="{{ site.tags.featured[0].url }}">Read on...</a> 
+      <span class="post-teaser">{% if site.tags.featured[0].excerpt_tag %}{{ site.tags.featured[0].excerpt_tag | markdownify }}{% endif %}</span>&nbsp;<a href="{{ site.tags.featured[0].url }}">Read on...</a> 
     </div>
   </div>
 
@@ -32,8 +32,8 @@ description: Open Source Project's and articles on web development, web design, 
           {% else %}
             <span class="post-category">{{ site.tags.featured[1].tags[1] }}</span>
           {% endif %}
-          <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[1].url }}">{{ site.tags.featured[1].title }}</a></h1>
-          <span class="post-teaser">{{ site.tags.featured[1].content | strip_html | truncatewords:15}}</span>&nbsp;<a href="{{ site.tags.featured[1].url }}">Read on...</a> 
+          <h2><a href="{{ BASE_PATH }}{{ site.tags.featured[1].url }}">{{ site.tags.featured[1].title }}</a></h2>
+          <span class="post-teaser">{% if site.tags.featured[1].excerpt_tag %}{{ site.tags.featured[1].excerpt_tag | markdownify }}{% endif %}</span>&nbsp;<a href="{{ site.tags.featured[1].url }}">Read on...</a> 
         </div>
       </div>
       <div class="span12">
@@ -43,8 +43,8 @@ description: Open Source Project's and articles on web development, web design, 
           {% else %}
             <span class="post-category">{{ site.tags.featured[2].tags[1] }}</span>
           {% endif %}
-          <h1><a href="{{ BASE_PATH }}{{ site.tags.featured[2].url }}">{{ site.tags.featured[2].title }}</a></h1>
-          <span class="post-teaser">{{ site.tags.featured[2].content | strip_html | truncatewords:15}}</span>&nbsp;<a href="{{ site.tags.featured[2].url }}">Read on...</a> 
+          <h2><a href="{{ BASE_PATH }}{{ site.tags.featured[2].url }}">{{ site.tags.featured[2].title }}</a></h2>
+          <span class="post-teaser">{% if site.tags.featured[2].excerpt_tag %}{{ site.tags.featured[2].excerpt_tag | markdownify }}{% endif %}</span>&nbsp;<a href="{{ site.tags.featured[2].url }}">Read on...</a> 
         </div>
       </div>
     </div>
@@ -73,8 +73,8 @@ description: Open Source Project's and articles on web development, web design, 
                       {% else %}
                         <span class="post-category">{{ post.tags[1] }}</span>
                       {% endif %}
-                      <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                      <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
+                      <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                      <span class="post-teaser">{% if post.excerpt_tag %}{{ post.excerpt_tag | markdownify }}{% endif %}</span>
                       <a href="{{ post.url }}">Read on...</a>
                     </div>
                   </div>
@@ -82,8 +82,8 @@ description: Open Source Project's and articles on web development, web design, 
                 <div class="waypoints-container">
                   <div id="left-inner-bottom-post">
                     <span class="post-category">{{ post.tags[0] }}</span>
-                    <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                    <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
+                    <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <span class="post-teaser">{% if post.excerpt_tag %}{{ post.excerpt_tag | markdownify }}{% endif %}</span>
                     <a href="{{ post.url }}">Read on...</a>
                   </div>
                 </div>
@@ -108,8 +108,8 @@ description: Open Source Project's and articles on web development, web design, 
                         {% else %}
                           <span class="post-category">{{ post.tags[1] }}</span>
                         {% endif %}
-                        <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
+                        <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                        <span class="post-teaser">{% if post.excerpt_tag %}{{ post.excerpt_tag | markdownify }}{% endif %}</span>
                         <a href="{{ post.url }}">Read on...</a>
                       </div>
                     </div>
@@ -117,8 +117,8 @@ description: Open Source Project's and articles on web development, web design, 
                     <div class="waypoints-container">
                       <div class="right-inner-bottom-region-post">
                         <span class="post-category">{{ post.tags[0] }}</span>
-                        <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
-                        <span class="post-teaser">{{ post.content | strip_html | truncatewords:40}}</span>
+                        <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                        <span class="post-teaser">{% if post.excerpt_tag %}{{ post.excerpt_tag | markdownify }}{% endif %}</span>
                         <a href="{{ post.url }}">Read on...</a>
                       </div>
                     </div>

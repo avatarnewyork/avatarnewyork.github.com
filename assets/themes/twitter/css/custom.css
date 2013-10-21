@@ -85,7 +85,9 @@ form.navbar-form > button {
 	line-height: 2.6em;
 }
 
-
+h1, h2, h3 {
+	color: #666666;
+}
 
 /* /////////////////////////// */
 
@@ -161,7 +163,7 @@ form.navbar-form > button {
 	color: #FFF;
 	text-decoration: underline;
 }
-#left-inner-bottom-post-blue h1 a{
+#left-inner-bottom-post-blue h2 a{
 	text-decoration: none;
 }
 
@@ -201,7 +203,7 @@ form.navbar-form > button {
 	text-decoration: underline;
 }
 
-.right-inner h1 a{
+.right-inner h2 a{
 	text-decoration: none;
 }
 
@@ -212,13 +214,13 @@ form.navbar-form > button {
 	text-decoration: underline;
 }
 
-#right-inner-top-post h1 a, #right-inner-bottom-post h1 a{
+#right-inner-top-post h2 a, #right-inner-bottom-post h2 a{
 	font-size: 34px;
 	color: #FFF;
 	font-weight: bold;
 }
 
-#left-inner-bottom-post h1 a{
+#left-inner-bottom-post h2 a{
 	font-size: 34px;
 	color: #666;
 	font-weight: bold;
@@ -235,7 +237,7 @@ form.navbar-form > button {
 	position: relative;
 }
 
-.right-inner-bottom-region-post h1 a{
+.right-inner-bottom-region-post h2 a{
 	font-size: 34px;
 	color: #666;
 	font-weight: bold;
@@ -257,7 +259,7 @@ form.navbar-form > button {
 	color: #FFF;
 	text-decoration: underline;
 }
-.right-inner-bottom-region-post-blue h1 a{
+.right-inner-bottom-region-post-blue h2 a{
 	text-decoration: none;
 }
 
