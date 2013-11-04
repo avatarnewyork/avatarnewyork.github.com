@@ -2,7 +2,7 @@
 layout: post
 author: jonathan 
 title: "How To Handle Touch Events on Image Maps"
-description: ""
+description: "how-to handle javascript touch events on image maps for mobile devices for responsive web design."
 category: Post
 tags: 
  - development
