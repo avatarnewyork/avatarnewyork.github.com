@@ -40,7 +40,7 @@ embedly:
 
   soundcloud:
     color: 4ec6e0 # SoundCloud specific parameter for colorful players
-    width: 625px
+    width: 360px
 
 authors:
   patrick:

@@ -12,14 +12,13 @@ published: true
 ---
 {% include JB/setup %}
 ![PagerDutySays](/assets/media/pagerdutysays_header.png)
-{% excerpt %}[PagerDutySays](https://github.com/avatarnewyork/pagerdutysays) is a PHP Text-To-Speech (TTS) service endpoint for [PagerDuty webhooks](http://blog.pagerduty.com/2013/08/pagerduty-webhooks-hipchat/). {% endexcerpt %} PagerDuty is a great service for notifying who's on call.  The only problem for us was, if your not on call, you don't get not notified.  I'd only know if something was wrong when I randomly checked [DataDog](http://www.datadoghq.com) or someone shot me an email.  
+{% excerpt %}PagerDutySays is a PHP Text-To-Speech (TTS) service endpoint for Pager Duty Webhooks. {% endexcerpt %} PagerDuty is a great service for notifying who's on call.  The only problem for us was, if your not on call, you don't get not notified.  I'd only know if something was wrong when I randomly checked [DataDog](http://www.datadoghq.com) or someone shot me an email.  
 
-This is where Pager Duty Webhooks come in handy.  A webhook will be triggered upon any interesting event that occurs within a service.  You can set a webhook for individual services which is great if you only want to be notified when say [Pingdom](http://www.pingdom.com) sends an alert out..
+This is where [Pager Duty Webhooks](http://blog.pagerduty.com/2013/08/pagerduty-webhooks-hipchat/) come in handy.  A webhook will be triggered upon any interesting event that occurs within a service.  You can set a webhook for individual services which is great if you only want to be notified when say [Pingdom](http://www.pingdom.com) sends an alert out..
 
-Rather than your traditional email or text message, we wanted a verbal notification of what happened.  Since I have a mac and a couple airport expresses throughout the office, I thought why not build a text-to-speech endpoint that will **_say_** what happened.  Enter PagerDutySays, it's a PHP-based text-to-speach notification endpoint that runs almost out-of-the-box on Mac OSX.  It executes the built-in program `say` and "says" the notifications summary status for a triggered alert out loud through your speakers or through [AirPlay](http://www.apple.com/airplay/)!  So for example, if I set a webhook for the pingdom service and a website goes down, my computer speaks to me out loud: **_"DOWN alert: testing (www.testing.com) is DOWN"_**.
+Rather than your traditional email or text message, we wanted a verbal notification of what happened.  Since I have a mac and a couple airport expresses throughout the office, I thought why not build a text-to-speech endpoint that will **_say_** what happened.  Enter [PagerDutySays](https://github.com/avatarnewyork/pagerdutysays), a PHP-based text-to-speach notification endpoint that runs almost out-of-the-box on Mac OSX.  It executes the built-in OSX program `/usr/bin/say` and "says" the notifications summary status for a triggered alert out loud through your speakers or through [AirPlay](http://www.apple.com/airplay/)!  So for example, if I set a webhook for the pingdom service and a website goes down, my computer speaks to me out loud: **_"DOWN alert: testing (www.testing.com) is DOWN"_**. 
 
 ### Audio Sample
-This is a real example of what a pingdom alert sounds like.
 {% embedly  https://soundcloud.com/patrick-tully-3/pagerdutysays-audio-example %}
 
 ### Requires 
