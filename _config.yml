@@ -34,6 +34,14 @@ author :
 #
 production_url : http://workshop.avatarnewyork.com
 
+# Embed.ly Config
+embedly:
+  api_key: 80f92a8f0db3404396bb32d8f6a1e3d8
+
+  soundcloud:
+    color: 4ec6e0 # SoundCloud specific parameter for colorful players
+    width: 625px
+
 authors:
   patrick:
     name: Patrick Tully
