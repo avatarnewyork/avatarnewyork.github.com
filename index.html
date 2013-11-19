@@ -23,6 +23,7 @@ description: Open Source Project's and articles on web development, web design, 
     </div>
   </div>
 
+  <!-- For Projects, display the description rather than the excerpt and remove read on -->
   <div class="right-inner">
     <div class="row-fluid">
       <div id="right-inner-top" class="span12">
@@ -33,7 +34,7 @@ description: Open Source Project's and articles on web development, web design, 
             <span class="post-category">{{ site.tags.featured[1].tags[1] }}</span>
           {% endif %}
           <h2><a href="{{ BASE_PATH }}{{ site.tags.featured[1].url }}">{{ site.tags.featured[1].title }}</a></h2>
-          <span class="post-teaser">{% if site.tags.featured[1].excerpt_tag %}{{ site.tags.featured[1].excerpt_tag | markdownify }}{% endif %}</span>&nbsp;<a href="{{ site.tags.featured[1].url }}">Read on...</a> 
+          <span class="post-teaser">{% if site.tags.featured[1].excerpt_tag %}{{ site.tags.featured[1].description | markdownify }}{% endif %}</span>&nbsp;<!-- a href="{{ site.tags.featured[1].url }}">Read on...</a --> 
         </div>
       </div>
       <div class="span12">
@@ -44,7 +45,7 @@ description: Open Source Project's and articles on web development, web design, 
             <span class="post-category">{{ site.tags.featured[2].tags[1] }}</span>
           {% endif %}
           <h2><a href="{{ BASE_PATH }}{{ site.tags.featured[2].url }}">{{ site.tags.featured[2].title }}</a></h2>
-          <span class="post-teaser">{% if site.tags.featured[2].excerpt_tag %}{{ site.tags.featured[2].excerpt_tag | markdownify }}{% endif %}</span>&nbsp;<a href="{{ site.tags.featured[2].url }}">Read on...</a> 
+          <span class="post-teaser">{% if site.tags.featured[2].excerpt_tag %}{{ site.tags.featured[2].description | markdownify }}{% endif %}</span>&nbsp;<!-- a href="{{ site.tags.featured[2].url }}">Read on...</a --> 
         </div>
       </div>
     </div>
@@ -74,8 +75,8 @@ description: Open Source Project's and articles on web development, web design, 
                         <span class="post-category">{{ post.tags[1] }}</span>
                       {% endif %}
                       <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-                      <span class="post-teaser">{% if post.excerpt_tag %}{{ post.excerpt_tag | markdownify }}{% endif %}</span>
-                      <a href="{{ post.url }}">Read on...</a>
+                      <span class="post-teaser">{% if post.excerpt_tag %}{{ post.description | markdownify }}{% endif %}</span>
+                      <!-- a href="{{ post.url }}">Read on...</a -->
                     </div>
                   </div>
                 {% else %}
@@ -109,8 +110,8 @@ description: Open Source Project's and articles on web development, web design, 
                           <span class="post-category">{{ post.tags[1] }}</span>
                         {% endif %}
                         <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-                        <span class="post-teaser">{% if post.excerpt_tag %}{{ post.excerpt_tag | markdownify }}{% endif %}</span>
-                        <a href="{{ post.url }}">Read on...</a>
+                        <span class="post-teaser">{% if post.excerpt_tag %}{{ post.description | markdownify }}{% endif %}</span>
+                        <!-- a href="{{ post.url }}">Read on...</a -->
                       </div>
                     </div>
                     {% else %}
