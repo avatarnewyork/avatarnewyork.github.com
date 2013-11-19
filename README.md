@@ -62,6 +62,17 @@ Here is the breakdown:
 7. Be sure to include `{% excerpt %}` and `{% endexcerpt %}` tags around the content you want to show up as an excerp on the homepage.
 8. When done, press `Save` and enter commit message.  Your post should appear in a few minutes
 
+### Required Gems
+```Ruby
+gem 'syntax', '1.0.0'
+gem 'liquid'
+gem 'jekyll'
+gem 'redcarpet'
+gem 's3_website', '1.4.3'
+gem 'nokogiri'
+gem 'json'
+gem 'domainatrix'
+```
 
 ## Version
 
