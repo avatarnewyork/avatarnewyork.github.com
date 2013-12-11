@@ -12,7 +12,7 @@ published: true
 ---
 {% include JB/setup %}
 ![PagerDutySays](/assets/media/pagerdutysays_header.png)
-{% excerpt %}PagerDutySays is a PHP Text-To-Speech (TTS) service endpoint for Pager Duty Webhooks. {% endexcerpt %} PagerDuty is a great service for notifying who's on call.  The only problem for us was, if your not on call, you don't get not notified.  I'd only know if something was wrong when I randomly checked [DataDog](http://www.datadoghq.com) or someone shot me an email.  
+{% excerpt %}PagerDutySays is a PHP Text-To-Speech (TTS) service endpoint for Pager Duty Webhooks. {% endexcerpt %} PagerDuty is a great service for notifying who's on call.  The only problem for our [hosting services](http://www.avatarnewyork.com/services/hosting) team was, if your not on call, you don't get not notified.  I'd only know if something was wrong when I randomly checked [DataDog](http://www.datadoghq.com) or someone shot me an email.  
 
 This is where [Pager Duty Webhooks](http://blog.pagerduty.com/2013/08/pagerduty-webhooks-hipchat/) come in handy.  A webhook will be triggered upon any interesting event that occurs within a service.  You can set a webhook for individual services which is great if you only want to be notified when say [Pingdom](http://www.pingdom.com) sends an alert out..
 

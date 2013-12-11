@@ -14,17 +14,16 @@ published: true
 
 ![Puppet Cloud Backups](/assets/media/puppet_backups.png)
 
-{% excerpt %}
-[Rackspace Cloud Backups](http://www.rackspace.com/cloud/backup/) is part of Rackspace's public cloud offering 
-{% endexcerpt %}
-
-and allows you to backup your server file systems (rather than a VM image). 
-
- 
+{% excerpt %}[Rackspace Cloud Backups](http://www.rackspace.com/cloud/backup/) is part of Rackspace's public cloud offering {% endexcerpt %} and allows you to backup your server file systems (rather than a VM image). 
 
 You can configure individual backups through Rackspace's control panel. In order to utilize it, you need to install their backup agent on your VM.  puppet-cloudbackup is a puppet module that will automatically install the [Rackspace Cloud Backup Agent](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent).  See more info here: [Rackspace Cloud Backups](http://www.rackspace.com/cloud/backup/).
 
 ## Module Installation
+* Grab the latest code from the [puppet-cloudbackup GitHub project](https://github.com/avatarnewyork/puppet-cloudbackup):
+
+    ```bash
+    clone git@github.com:avatarnewyork/puppet-cloudbackup.git cloudbackup
+    ```
 
 * Add the 'cloudbackup' folder into your module path
 * Include the class and configure the relevant variables for your Rackspace Cloud Backup account:

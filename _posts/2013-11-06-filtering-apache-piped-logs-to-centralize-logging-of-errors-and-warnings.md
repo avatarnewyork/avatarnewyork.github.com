@@ -14,7 +14,7 @@ published: true
 {% include JB/setup %}
 ![Apache Piped json logs](/assets/media/apache_piped_json.png)
 {% excerpt %}
-We recently upgraded to [Loggly's Gen2 service](http://www.loggly.com/docs/key-features-in-gen2/) which required us to revisit our [rsyslog](http://www.rsyslog.com/) configurations and make some adjustments.
+Our [hosting team](http://www.avatarnewyork.com/services/hosting) recently upgraded to [Loggly's Gen2 service](http://www.loggly.com/docs/key-features-in-gen2/) which required us to revisit our [rsyslog](http://www.rsyslog.com/) configurations and make some adjustments.
 {% endexcerpt %}
 First, we wanted to start taking advantage of Loggly's ability to parse [JSON](http://json.org/) logs.  We created a new apache logging format called `jsonlog` according to [loggly's setup instructions](http://community.loggly.com/customer/portal/articles/1189777-json-best-practices-for-logging) (along with a couple extra headers we are interested in):
 
