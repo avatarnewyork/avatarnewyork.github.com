@@ -21,7 +21,7 @@ title : Atom Feed
    <link href="{{ site.production_url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.production_url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <content type="html">{{ post.content | xml_escape }}&lt;a href=&quot;http://www.codeproject.com/script/Articles/BlogFeedList.aspx?amid=10479251&quot; rel=&quot;tag&quot; style=&quot;display:none&quot;&gt;CodeProject&lt;/a&gt;</content>
  </entry>
  {% endfor %}
  
