@@ -46,9 +46,11 @@ So if you have this problem, and are using Apache + PHP, there's a few ways to f
 
 - calling apache_request_headers(), which gets raw headers and you can handle it manually
 - this rewrite code in .htaccess to get it to be in $_SERVER.
+
 ```apacheconf
     RewriteEngine On
     RewriteCond %{HTTP:Authorization} ^(.*)
     RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 ```  
+
 Either fix will work depending on your needs.
