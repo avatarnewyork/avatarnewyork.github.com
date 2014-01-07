@@ -19,7 +19,7 @@ PHP + Apache seems to have an issue with custom formats of the Authorization HTT
 
 ### API and Headers
 
-HTTP headers are a handy place to send data to an API without having to muddle up your request body with metadata. A major use for them is to place API credentials. When building your API and using HTTP headers as your vehicle for authorization data, you can customize for format, as HTTP headers are essentially just key/value items. It's up to the consumer of the API to make sure the format of that key/value is what you told them it should be. Many protocols, such as OAuth, specify a custom format for the Authorization header to verify the user is who they say they are, and that the data they are sending you is really what they wanted to send you.
+HTTP headers are a handy place to send data to an API without having to muddle up your request body with metadata. A major use for them is to include API credentials. When building your API and using HTTP headers as your vehicle for authorization data, you can customize the format, as HTTP headers are essentially just key/value items. It's up to the consumer of the API to make sure the format of that key/value is what you told them it should be. Many protocols, such as OAuth, specify a custom format for the Authorization header to verify the user is who they say they are, and that the data they are sending you is really what they wanted to send you.
 
 ### That's great, but PHP isn't giving me the Authorization header in $_SERVER
 
