@@ -1,9 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: "Typophiles Rejoice! letter-spacing is finally getting fixed!"
 category: Post
-description: "CSS property letter-spacing is finally getting fixed!"
+description: null
 author: ben
 tags: 
   - development
