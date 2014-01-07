@@ -9,7 +9,13 @@ tags:
   - development
 ---
 
+{% include JB/setup %}
+
 ## Hey PHP, where's the Authorization header?
+
+{% excerpt %}
+PHP + Apache seems to have an issue with custom formats of the Authorization HTTP Header. But there's multiple ways to fix the problem.
+{% endexcerpt %}
 
 ### API and Headers
 
