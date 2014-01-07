@@ -15,7 +15,7 @@ published: true
 
 {% excerpt %}
 
-We use [Postfix](http://www.postfix.org/) with [Mailgun](http://mailgun.com) as our  relay host.  We came accross an issue the other day where mail that was being sent and received by the same domain was bouncing.  Below is what happened and how we fixed it.
+We use [Postfix](http://www.postfix.org/) with [Mailgun](http://mailgun.com) as our  relay host.  We came across an issue the other day where mail that was being sent and received by the same domain was bouncing.  Below is what happened and how we fixed it.
 
 {% endexcerpt %}
 
