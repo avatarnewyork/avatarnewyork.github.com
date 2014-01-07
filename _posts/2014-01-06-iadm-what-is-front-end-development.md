@@ -9,7 +9,11 @@ tags:
   - development
 ---
 
+{% include JB/setup %}
+
+{% excerpt %}
 Part of the series: Inside A Developer's Mind. This article is targetted at anyone who should know a little more about how development works and what it all means.
+{% endexcerpt %}
 
 ## What is front end development?
 
