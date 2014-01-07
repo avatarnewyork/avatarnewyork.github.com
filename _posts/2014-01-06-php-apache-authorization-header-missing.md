@@ -1,9 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: PHP Apache Authorization Header missing
 category: Post
-description: HTTP Authorization Header missing from PHP $_SERVER array with Apache
+description: null
 author: ben
 tags: 
   - development
@@ -51,4 +51,4 @@ So if you have this problem, and are using Apache + PHP, there's a few ways to f
     RewriteCond %{HTTP:Authorization} ^(.*)
     RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 ```  
-Either fix will work depending on your needs. 
+Either fix will work depending on your needs.
