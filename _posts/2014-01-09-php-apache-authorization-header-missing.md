@@ -3,7 +3,7 @@ layout: post
 published: true
 title: PHP Apache Authorization Header missing
 category: Post
-description: null
+description: Fixing custom authorization headers in Apache and PHP for use with web services
 author: ben
 tags: 
   - development
