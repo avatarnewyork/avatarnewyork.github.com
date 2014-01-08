@@ -13,9 +13,8 @@ published: true
 ---
 {% include JB/setup %}
 
-<div style="text-align:center; float:left; margin-right:29px; margin-bottom:6px;">
-    <img src="/assets/media/folder.png" alt="" />
-</div>
+![Large Sets of Files](/assets/media/folder.png)
+
 
 {% excerpt %}
 If you have ever managed a website that relies heavily on a large number of uploaded files, you might have come across the dreaded “Too Many Links” error.  Those of you who have never encountered the error, beware!  
