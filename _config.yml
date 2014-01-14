@@ -70,6 +70,15 @@ authors:
     web: http://avatarnewyork.com
     twitter: avatarnewyork
     github: jakraska
+  geoff:
+    name: Geoff Nazzaro
+    display_name: Geoff
+    gravatar: b1747e41e0d42f97990e70c565668275
+    gplusid: 104789396702320995362
+    email: geoff@avatarnewyork.com
+    web: http://avatarnewyork.com
+    twitter: avatarnewyork
+    github: geoffreyroy
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

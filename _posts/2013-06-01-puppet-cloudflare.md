@@ -5,7 +5,6 @@ description: "A puppet module for cloudflare to automate A Record creation"
 author: patrick
 category: Project
 tags:
-  - featured
   - development
 image: "/assets/media/puppet_cloudflare.png"
 published: true
