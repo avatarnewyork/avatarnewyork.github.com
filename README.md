@@ -42,7 +42,7 @@ Here is the breakdown:
 * __description__: brief description of article - used as META-DESCRIPTION tag so it's now important!
 * __category__: Can be either `Project` or `Post` (case sensitive)
 * __tags__: in yaml format - if this project should be featured, add `featured` to the tag
-* __image__: Image to be used in structured data so this is now important!  Maybe used in future to display on homepage.
+* __image__: Image to be used in structured data so this is now important!  Please use .png files.  Maybe used in future to display on homepage.
 * __published__: should be true
 
 6. Edit your content
