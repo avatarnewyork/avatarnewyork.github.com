@@ -3,15 +3,18 @@ layout: post
 published: true
 title: "Typophiles Rejoice! letter-spacing is finally getting fixed!"
 category: Post
-description: null
+description: "CSS property letter-spacing is getting fixed"
 author: ben
 tags: 
   - development
   - design
   - uxui
+image: "/assets/media/letterspacing.png"
 ---
 
 {% include JB/setup %}
+
+![Letter Spacing](/assets/media/letterspacing.png)
 
 ## CSS property letter-spacing is getting fixed
 
