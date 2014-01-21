@@ -14,7 +14,7 @@ image: "/assets/media/letterspacing.png"
 
 {% include JB/setup %}
 
-![Letter Spacing](/assets/media/letterspacing.png)
+![Letter Spacing](//workshop.avatarnewyork.com/assets/media/letterspacing.png)
 
 ## CSS property letter-spacing is getting fixed
 

@@ -13,7 +13,7 @@ published: true
 ---
 {% include JB/setup %}
 
-![Social Network Icons Stencil](/assets/media/socialnetworkicons.png)
+![Social Network Icons Stencil](//workshop.avatarnewyork.com/assets/media/socialnetworkicons.png)
 
 We love using [Omnigraffle](http://www.omnigroup.com/omnigraffle) for [wireframing, sitemap, and flowchart  duties](http://www.avatarnewyork.com/services/information-architecture). One feature we utilize frequently are stencils, both shared and our own. They greatly speed workflow, create consistency between documents, and can also act as a base point for documents that need unique styling. We noticed that we were constantly trawling our past Omnigraffle wireframes to scrap together and reuse social network icons in some form or another. When a Google search for an Omnigraffle social network icon set didn't wield satisfactory results, we decided to just make a set ourselves.
 

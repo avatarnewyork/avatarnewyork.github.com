@@ -13,7 +13,7 @@ published: true
 ---
 {% include JB/setup %}
 
-![Large Sets of Files](/assets/media/folder.png)
+![Large Sets of Files](//workshop.avatarnewyork.com/assets/media/folder.png)
 
 
 {% excerpt %}

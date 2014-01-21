@@ -8,16 +8,24 @@ title : Atom Feed
  <title>{{ site.title }}</title>
  <link href="{{ site.production_url }}/{{ site.atom_path }}" rel="self"/>
  <link href="{{ site.production_url }}"/>
+ <icon>/assets/favicon.png</icon>
+ <subtitle>Web Development Community and Open Source Projects</subtitle>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.production_url }}</id>
  <author>
    <name>{{ site.author.name }}</name>
    <email>{{ site.author.email }}</email>
+   <uri>http://avatarnewyork.com</uri>
  </author>
 
  {% for post in site.posts %}
+ {% assign author = site.authors[post.author] %}
  <entry>
    <title>{{ post.title }}</title>
+   <author>
+     <name>{{ author.display_name }}</name>
+     <uri>https://plus.google.com/{{ author.gplusid }}?rel=author</uri>
+   </author>
    <link href="{{ site.production_url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.production_url }}{{ post.id }}</id>
