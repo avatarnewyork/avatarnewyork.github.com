@@ -1,0 +1,10 @@
+{% comment %}
+<!-- 
+     custom page list provider to define only specific URL's in the main nav 
+-->
+{% endcomment %}
+<li><a href="http://eepurl.com/MCkTf" class="active">Subscribe</a></li>
+<li><a href="/tags.html" class="active">Categories</a></li>
+<li><a href="https://github.com/avatarnewyork/avatarnewyork.github.com" class="active">Source Code</a></li>
+<li><a href="/atom.xml" class="active">RSS Feed</a></li>
+
