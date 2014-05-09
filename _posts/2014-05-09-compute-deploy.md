@@ -82,3 +82,9 @@ This is probably the most common error you may run into when first trying out th
 SSL_CERT_FILE=/usr/share/curl/ca-bundle.crt python2.7 ./compute-deploy.py --size=1024 ...
 ```
 
+## Additional Resources
+
+* [compute-deploy on GitHub](https://github.com/avatarnewyork/compute-deploy)
+* [Apache Libcloud](https://libcloud.apache.org/)
+* [puppet-bootstrap on GitHub](https://github.com/avatarnewyork/puppet-bootstrap)
+* [Cloud Hosting](http://avatarnewyork.com/company/cloud-hosting)
