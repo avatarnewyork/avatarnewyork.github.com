@@ -4,7 +4,8 @@ author: patrick
 title: "Checking Rackspace Status using Iron.io"
 description: "how-to use iron.io workers to check rackspace status and set it on statuspage.io components"
 category: Post
-tags: devops
+tags:
+  - devops
 image: "/assets/media/rackspace_statusio.png"
 published: true
 ---
