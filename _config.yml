@@ -79,6 +79,15 @@ authors:
     web: http://avatarnewyork.com
     twitter: avatarnewyork
     github: geoffreyroy
+  antonina:
+    name: Antonina Serdyukova
+    display_name: Antonina
+    gravatar: 32c19192812c047826457e4c3d128e7e
+    gplusid: 111577320369673726573
+    email: antonina@avatarnewyork.com
+    web: http://avatarnewyork.com
+    twitter: avatarnewyork
+    github: r66ff
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
