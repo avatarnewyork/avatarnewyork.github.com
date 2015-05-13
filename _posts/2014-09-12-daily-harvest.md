@@ -5,6 +5,7 @@ title: "Daily Harvest"
 description: "daily timesheet reports and backups with the Harvest API, Mailgun, Iron.io, and MySQL"
 category: Project
 tags:
+  - featured
   - devops
 image: "/assets/media/daily_harvest.png"
 published: true

@@ -5,7 +5,6 @@ title: "PagerDutySays TTS Service"
 description: "PagerDutySays is a PHP Text-to-speech Service Endpoint for PagerDuty webhooks."
 category: Project
 tags: 
-  - featured
   - development
 image: "/assets/media/pagerdutysays_header.png"
 published: true
